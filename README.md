@@ -1,4 +1,4 @@
-# GenCiDev Notes API 📝
+# Gencidev Notes API 📝
 
 API sederhana untuk manajemen catatan dengan autentikasi JWT menggunakan Node.js, Express, dan MySQL.
 
