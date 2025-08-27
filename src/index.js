@@ -21,6 +21,15 @@ app.get("/", (req, res) => {
   res.send("Welcome to Notes API 🚀");
 });
 
+// health check root
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "Notes API is running 🚀",
+    timestamp: new Date(),
+  });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
